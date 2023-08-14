@@ -14,7 +14,7 @@ conda install qgis matplotlib numpy -c conda-forge
 ```
 
 ```bash
-yum install mesa-libGL
+yum install mesa-libGL Xvfb
 ```
 
 ```bash
@@ -29,5 +29,7 @@ matplotlib.font_manager._load_fontmanager(try_read_cache=False)
 
 ```bash
 conda activate qgis_env
+Xvfb :99 -ac -noreset & 
+export DISPLAY=:99
 python export_image.py -i AutoRun/D20220918/E1444
 ```
