@@ -1,0 +1,18 @@
+!table
+!version 300
+!charset WindowsTradChinese
+
+Definition Table
+  Type DBF Charset "Neutral"
+  Fields 11
+    Scen_ID Char (6) ;
+    Town_code Char (4) Index 1 ;
+    FullName Char (16) ;
+    LowRise Decimal (10, 1) ;
+    MedRise Decimal (10, 1) ;
+    HighRise Decimal (10, 1) ;
+    TotalCount Decimal (10, 1) ;
+    Severity_3 Decimal (10, 2) ;
+    Severity_4 Decimal (10, 2) ;
+    SubTotal Decimal (10, 2) ;
+    TotalLoss Decimal (14, 3) ;

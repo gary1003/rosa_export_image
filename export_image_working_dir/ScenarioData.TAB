@@ -1,0 +1,9 @@
+!table
+!version 300
+!charset WindowsTradChinese
+
+Definition Table
+  Type DBF Charset "Neutral"
+  Fields 2
+    Name Char (16) ;
+    Value Char (128) ;

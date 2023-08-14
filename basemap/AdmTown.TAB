@@ -1,0 +1,22 @@
+!table
+!version 300
+!charset WindowsTradChinese
+
+Definition Table
+  Type DBF Charset "Neutral"
+  Fields 10
+    Town_code Char (4) ;
+    Cnty_code Char (2) ;
+    Cnty_name Char (8) ;
+    Town_name Char (8) ;
+    Tn_name Char (6) ;
+    FullName Char (16) ;
+    Zip_code Char (3) ;
+    Ntract Decimal (3, 0) ;
+    Pop Decimal (8, 0) ;
+    Household Decimal (8, 0) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "cc5d7f84-aedb-4f30-af95-bf3ac9876c59"
+end_metadata

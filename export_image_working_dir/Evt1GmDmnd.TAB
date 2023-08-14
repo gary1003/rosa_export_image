@@ -1,0 +1,15 @@
+!table
+!version 300
+!charset WindowsTradChinese
+
+Definition Table
+  Type DBF Charset "Neutral"
+  Fields 8
+    Scen_ID Char (6) ;
+    Tract Char (7) ;
+    Pga Decimal (8, 4) ;
+    Sa03 Decimal (8, 4) ;
+    Sa10 Decimal (8, 4) ;
+    PI_Lqf Decimal (5, 2) ;
+    Prob_Lqf Decimal (6, 4) ;
+    Pgd_Lqf_V Decimal (7, 2) ;
