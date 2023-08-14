@@ -23,8 +23,8 @@ fc-cache -f -v
 ```
 
 ```python
-import matplotlib
-matplotlib.font_manager._rebuild()
+import matplotlib.font_manager
+matplotlib.font_manager._load_fontmanager(try_read_cache=False)
 ```
 
 ```bash
