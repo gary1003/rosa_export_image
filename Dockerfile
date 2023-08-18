@@ -6,8 +6,12 @@ ENV XDG_RUNTIME_DIR=/tmp/runtime-root
 ENV PATH="/bin:${PATH}"
 ENV PYTHONPATH="/bin/python3:${PYTHONPATH}"
 
+# copy all files to the container
+COPY . /rosa_export_image
+
 RUN apt-get update && apt-get install -y python3-pip
-RUN cp msjh.ttc /usr/share/fonts
+# RUN cp msjh.ttc /usr/share/fonts
+COPY msjh.ttc /usr/share/fonts
 RUN fc-cache -f -v
 
 RUN python3 -m pip install --upgrade pip

@@ -1,4 +1,20 @@
 ```bash
+sudo yum install docker
+sudo usermod -a -G docker ec2-user
+id ec2-user
+newgrp docker
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+```
+
+```bash
+docker build -t qgis .
+docker run -it qgis
+```
+
+--- legacy ---
+
+```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 su
 bash Miniconda3-latest-Linux-x86_64.sh -bfp /miniconda
